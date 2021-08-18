@@ -43,8 +43,8 @@ let sendEvaluation = (e) => {
 /* Ordenar YL*/
 
 let ordernarValores = (e) => {
-    let copiArregloValores = arregloValores.map(numero => numero);
-    let copiaArregloPlanetas = arregloPlanetas.map(planeta => planeta);
+    let copiArregloValores = arraysValers.map(numero => numero);
+    let copiaArregloPlanetas = arraysPlanets.map(planeta => planeta);
 
     /**
      * Procedemos a ordenar el arreglo,  en el segundo caso,  emplearemos una propiedad de la 
