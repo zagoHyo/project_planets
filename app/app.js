@@ -1,4 +1,4 @@
-import Planet from "./planets/planets";
+import Planet from "./planets/planets.js";
 
 let arraysValers;
 let arraysDistance;
