@@ -39,3 +39,7 @@ let sendEvaluation = (e) => {
     console.log(arraysPlanets);
     alert("Array created successfully")
 }
+
+
+
+// prueba
