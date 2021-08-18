@@ -70,3 +70,33 @@ let ordernarValores = (e) => {
 
 }
 
+
+let filtrarDistancia = (e) => {
+    let distanciaABuscar = prompt("Distacia a filtrar");
+
+    let arregloFiltradoDistancia = arraysDistance.filter(
+        (distancia) => distancia >= distanciaABuscar
+    );
+
+    if (arregloFiltradoDistancia == undefined)
+        alert("Planeta NO Existe");
+    else
+        alert("Informacion del filtro",arregloFiltradoDistancia);
+        console.log(arregloFiltradoDistancia)
+
+}
+
+let buscarPlaneta = (e) => {
+    let nombrePlanetaABuscar = prompt("Nombre del planeta a buscar");
+    console.log(nombrePlanetaABuscar);
+    let r = arraysNamePlanets.find((nombre) => nombrePlanetaABuscar.toLowerCase() == nombre.toLowerCase());
+    console.log(r)
+
+    if (r == undefined)
+        alert("planeta NO Existe");
+    else
+        alert("El planeta si existe");
+}
+document.querySelector("#btn_filer").addEventListener("click", filtrarDistancia);
+document.querySelector("#btn_search").addEventListener("click", buscarPlaneta);
+
