@@ -71,4 +71,3 @@ let ordernarValores = (e) => {
     console.log(copia2ArregloPlanetas);
 
 }
-
