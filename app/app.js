@@ -75,7 +75,7 @@ let filtrarDistancia = (e) => {
     let arregloFiltradoDistancia = arraysDistance.filter(
         (distancia) => distancia >= distanciaABuscar
     );
-
+    
     if (arregloFiltradoDistancia == undefined)
         alert("Planeta NO Existe");
     else
