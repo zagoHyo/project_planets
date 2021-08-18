@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-let FiltrarDistanciaplanetas = (e) => {
-    let buscarDistancia = alert("Distancia a Filtrar");
-    
-}
-=======
 import Planet from "./planets/planets.js";
 
 let arraysValers;
@@ -46,14 +40,6 @@ let sendEvaluation = (e) => {
     alert("Array created successfully")
 }
 
-<<<<<<< HEAD
-
-
-// prueba
->>>>>>> Dtony-404
-=======
-/* Ordenar YL*/
-
 let ordernarValores = (e) => {
     let copiArregloValores = arregloValores.map(numero => numero);
     let copiaArregloPlanetas = arregloPlanetas.map(planeta => planeta);
@@ -84,4 +70,3 @@ let ordernarValores = (e) => {
 
 }
 
->>>>>>> Yudith
