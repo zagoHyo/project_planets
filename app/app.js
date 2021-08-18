@@ -71,3 +71,4 @@ let ordernarValores = (e) => {
     console.log(copia2ArregloPlanetas);
 
 }
+document.querySelector("#btn_order").addEventListener("click", ordernarValores);
