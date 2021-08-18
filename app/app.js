@@ -1,28 +1,28 @@
 import Planet from "./planets/planets.js";
 
-let arraysValers;
+var arrayValues;
 let arraysDistance;
 let arraysNamePlanets = [];
 let arraysPlanets = []
 let arraysSize = []
 
-let sendEvaluation = (e) => {
+var sendEvaluation = (e) => {
     let inputs = [...document.querySelectorAll(".number_planets")]
     let inputsN = [...document.querySelectorAll(".names_planets")]
     let inputD = [...document.querySelectorAll(".distance_planets")]
     let inputS = [...document.querySelectorAll(".size_planets")]
 
     arrayValues = inputs.map((input) => {
-        return parseInt(input.value)
+        return parseInt(input.value);
     })
-    arrayDistance = inputN.map((name) => {
-        return name.value
+    arraysNamePlanets = inputsN.map((name) => {
+        return name.value;
     })
-    arrayDistance = inputD.map((distance) => {
+    arraysDistance = inputD.map((distance) => {
         return distance.value
     })
-    arraySize = inputS.map((size) => {
-        return size.value
+    arraysSize = inputS.map((size) => {
+        return size.value;
     })
 
     for (let x = 1; x <= arrayValues.length; x++){
@@ -38,12 +38,13 @@ let sendEvaluation = (e) => {
 
     console.log(arraysPlanets);
     alert("Array created successfully")
+    console.log(arrayValues)
 }
 
 /* Ordenar YL*/
 
 let ordernarValores = (e) => {
-    let copiArregloValores = arraysValers.map(numero => numero);
+    let copiArregloValores = arrayValues.map(numero => numero);
     let copiaArregloPlanetas = arraysPlanets.map(planeta => planeta);
 
     /**
@@ -71,4 +72,6 @@ let ordernarValores = (e) => {
     console.log(copia2ArregloPlanetas);
 
 }
+
+document.querySelector("#btn_send").addEventListener("click", sendEvaluation);
 document.querySelector("#btn_order").addEventListener("click", ordernarValores);
